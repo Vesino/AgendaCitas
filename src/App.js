@@ -26,6 +26,7 @@ function App() {
   };
 
   useEffect(() => {
+    let initialCitas = JSON.parse(localStorage.getItem('citas'))
     if (initialCitas) {
       localStorage.setItem('citas', JSON.stringify(citas));
     } else {
